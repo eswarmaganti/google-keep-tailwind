@@ -1,0 +1,34 @@
+{
+  "notes": [
+    [
+      {
+        "id": "96649f7a-3604-4224-a8e2-0b79984acce7",
+        "title": "New Temp Note",
+        "description": "Hello TEmp Note",
+        "pinned": true,
+        "remainder": true
+      },
+      {
+        "id": "0f67defb-0d9c-41ae-99ff-996f3dc8098b",
+        "title": "New Note",
+        "description": "Hello all this is a test note\nEditing this one",
+        "pinned": true,
+        "remainder": false
+      },
+      {
+        "id": "63d96ce2-0c24-4bef-a018-b1a2540fd9cf",
+        "title": "My Favorite Techs",
+        "description": "FrontEnd\n   - JavaScript\n   - React.js\n   - Angular.js\n   - Tailwindcss\n   - Sass\n   - Bootstrap\nBackend\n   - Node.js\n   - express.js\n    - MongoDB",
+        "pinned": true,
+        "remainder": true
+      },
+      {
+        "id": "5739d220-074c-4793-b254-b0ab0e36a99a",
+        "title": "New Notes ",
+        "description": "Testing a new Notes\nthis app is created using reactjs",
+        "pinned": true,
+        "remainder": true
+      }
+    ]
+  ]
+}

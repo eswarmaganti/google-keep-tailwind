@@ -1,0 +1,9 @@
+.sidenav {
+  @apply w-[200px] h-full fixed;
+}
+.navlink {
+  @apply flex gap-2 items-center justify-start py-2 pl-10 hover:bg-neutral-600 rounded-r-full transition duration-200 ease-in;
+}
+.active {
+  @apply bg-yellow-400 text-neutral-900;
+}

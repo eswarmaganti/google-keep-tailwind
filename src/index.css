@@ -1,13 +1,86 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif !important;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  @apply bg-neutral-800 text-white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+textarea {
+  @apply text-neutral-900 text-sm font-medium  placeholder:italic placeholder:text-neutral-600 block bg-white w-full border border-neutral-300 rounded-md py-2 px-4 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1;
+}
+textarea {
+  @apply h-[100px];
+}
+
+.form-group {
+  @apply mb-2;
+}
+label {
+  @apply block py-1;
+}
+
+/*btn styles*/
+.btn {
+  @apply px-4 py-2 rounded text-center text-sm font-medium duration-200 ease-in flex items-center justify-center gap-2;
+}
+.btn-sm {
+  @apply px-2 py-1 rounded text-center text-xs font-medium duration-200 ease-in flex items-center justify-center gap-2;
+}
+.btn-inactive {
+  @apply bg-neutral-600 hover:bg-neutral-700;
+}
+
+.btn-sky {
+  @apply text-neutral-200 bg-sky-600 hover:bg-sky-700;
+}
+.btn-primary {
+  @apply text-neutral-900 bg-yellow-400 hover:bg-yellow-500;
+}
+.btn-danger {
+  @apply text-neutral-800 bg-red-500 hover:bg-red-600;
+}
+
+/*------------- ALerts ---------------*/
+
+.alert {
+  @apply w-full font-medium text-xs text-center p-2 rounded-lg text-neutral-900 my-1;
+}
+.alert-success {
+  @apply bg-green-600;
+}
+.alert-danger {
+  @apply bg-red-500;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -20px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 20px;
 }
